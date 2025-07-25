@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Home - Heart Disease App{% endblock %}
+{% block content %}
+<!-- Full-screen hero section with background image -->
+<div class="hero-fullscreen">
+    <div class="hero-overlay"></div>
+    <div class="hero-content-wrapper">
+        <div class="hero-content glass">
+            <h1 class="hero-title">Welcome to HeartPredict</h1>
+            <p class="hero-subtitle">Your AI-powered assistant for heart disease awareness and risk assessment.</p>
+            <a href="/assess" class="animated-btn hero-btn">Start Assessment</a>
+        </div>
+    </div>
+</div>
+
+<!-- Content section below hero -->
+<div class="content-section">
+    <section class="bento-grid">
+        <a href="/assess" class="bento-card assess-card">
+            <span class="bento-icon">👨‍⚕️</span>
+            <h2>Assessment</h2>
+            <p>Take a quick assessment to understand your heart health status using our advanced AI model.</p>
+        </a>
+        <a href="/about" class="bento-card about-card">
+            <span class="bento-icon">ℹ️</span>
+            <h2>About Heart Disease</h2>
+            <p>Learn about heart disease types, symptoms, and their impact on health.</p>
+        </a>
+        <a href="/risks" class="bento-card risks-card">
+            <span class="bento-icon">⚠️</span>
+            <h2>Risk Factors</h2>
+            <p>Identify and understand the key factors that contribute to heart disease.</p>
+        </a>
+        <a href="/precautions" class="bento-card precautions-card">
+            <span class="bento-icon">💪</span>
+            <h2>Prevention Tips</h2>
+            <p>Discover lifestyle changes and habits for better heart health.</p>
+        </a>
+    </section>
+</div>
+{% endblock %}

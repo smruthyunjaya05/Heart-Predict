@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="container glass info-page">
+    <h1>Heart Disease Information Center</h1>
+    
+    <!-- About Section -->
+    <section class="info-section">
+        <h2 class="section-title">About Heart Disease</h2>
+        <div class="card-grid">
+            <div class="info-card primary-card">
+                <div class="card-icon">❤️</div>
+                <h3>What is Heart Disease?</h3>
+                <p>Heart disease refers to a range of conditions that affect your heart, including blood vessel diseases, heart rhythm problems, and congenital heart defects. It is one of the leading causes of death globally.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">🩺</div>
+                <h3>Common Symptoms</h3>
+                <p>The most common symptoms include chest pain or tightness, shortness of breath, and fatigue. Patients may experience pain or numbness in their extremities, along with occasional heart palpitations or fluttering sensations in the chest.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">⚡</div>
+                <h3>Common Causes</h3>
+                <p>Heart disease often develops due to various factors including high blood pressure, elevated cholesterol levels, smoking, and diabetes. Lifestyle factors such as obesity, poor diet, and lack of physical activity can significantly increase the risk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Fields Section -->
+    <section class="info-section">
+        <h2 class="section-title">Assessment Parameters</h2>
+        <div class="card-grid">
+            <div class="info-card full-width">
+                <div class="card-icon">📝</div>
+                <h3>Input Fields Reference</h3>
+                <table class="input-fields-table">
+                    <tr><th>Field</th><th>Description</th></tr>
+                    <tr><td>Age</td><td>Patient's age in years</td></tr>
+                    <tr><td>Sex</td><td>Male or Female</td></tr>
+                    <tr><td>Chest Pain Type</td><td>Type of chest pain (ATA, NAP, ASY, TA)</td></tr>
+                    <tr><td>Resting Blood Pressure</td><td>Blood pressure (mm Hg) at rest</td></tr>
+                    <tr><td>Cholesterol</td><td>Serum cholesterol (mm/dl)</td></tr>
+                    <tr><td>Fasting Blood Sugar > 120 mg/dl</td><td>Yes or No</td></tr>
+                    <tr><td>Resting ECG Results</td><td>ECG results (Normal, ST, LVH)</td></tr>
+                    <tr><td>Maximum Heart Rate</td><td>Maximum heart rate achieved</td></tr>
+                    <tr><td>Exercise-Induced Angina</td><td>Yes or No</td></tr>
+                    <tr><td>ST Depression</td><td>Depression induced by exercise relative to rest</td></tr>
+                    <tr><td>ST Slope</td><td>Slope of the peak exercise ST segment (Up, Flat, Down)</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %} 
